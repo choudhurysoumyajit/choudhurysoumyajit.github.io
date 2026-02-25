@@ -79,6 +79,7 @@
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
 
+
 @keyframes typing {
   from {
     width: 0;
@@ -109,6 +110,13 @@
   transform: scale(1.1);
 }
 
+.badge-container {
+  display: flex;          /* Aligns items in a row */
+  gap: 10px;              /* Adds spacing between badges */
+  flex-wrap: wrap;        /* Optional: allows wrapping if too many badges */
+}
+
+.badge-container .badge-item:nth-child(4) { margin-top: 25px; /* pushes it down */ margin-left: auto; /* pushes it to the far right */ } .badge-container .badge-item:nth-child(4) .cert-badge { width: 200px; /* custom size for 4th badge */ height: auto;
 
 </style>
 
@@ -191,7 +199,7 @@
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p><a href="https://www.linkedin.com/in/soumyajit-choudhury" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/choudhurysoumyajit?tab=projects" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							<a href="https://github.com/choudhurysoumyajit?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -235,7 +243,7 @@
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Databricks</span> <span class="pull-right">90%</span>
+									<span>Databricks</span> <span class="pull-right">95%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
@@ -253,9 +261,9 @@
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>GenAI</span> <span class="pull-right">70%</span>
+									<span>GenAI</span> <span class="pull-right">75%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 								</div>
@@ -290,7 +298,7 @@
 							<div class="text">
 								<p class="mb-4">
 									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed and counting...</span>
+									<span>&nbsp; Projects completed and counting... </span>
 								</p>
 							</div>
 						</div>
@@ -310,6 +318,23 @@
             <p>Data Engineer and Data Analyst with 16+ years of experience in ETL, BI, and cloud technologies across diverse databases, delivering scalable data solutions. Possesses profound domain expertise in the US Healthcare Insurance industry, enabling deep insights and business-driven analytics.</p>
           </div>
         </div>
+
+		<div class="badge-container">
+		<div class="badge-item">
+			<img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/175114075" alt="Certification 1" class="cert-badge">
+		</div>
+		<div class="badge-item">
+			<img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/160466062" alt="Certification 2" class="cert-badge">
+		</div>
+		<div class="badge-item">
+			<img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/159431520" alt="Certification 3" class="cert-badge">
+		</div>
+		<div class="badge-item">
+			<img src="images/Infacert.jpg" alt="Certification 4" class="cert-badge">
+		</div>
+	</div>
+
+	<span style="display:inline-block; width:100px;"></span>
 
 		<div class="row">
 			<h1 class="big-4">Experience</h1>
@@ -365,7 +390,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="images/Soumyajit Choudhury_Resume.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -385,12 +410,12 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://github.com/choudhurysoumyajit/AI-English-Tutor.git" class="block-20 zoom-effect" style="background-image: url('images/AiEnglishTutor.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/choudhurysoumyajit/AI-English-Tutor.git">AI English Tutor</a></h3>
+                <p>Learn english through Practice with AI. The app is deployed here.<a href="https://jitaienglishtutor.streamlit.app/">check it out.</a></p>
               </div>
             </div>
           </div>          
@@ -422,12 +447,12 @@
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="https://github.com/choudhurysoumyajit/Personal-ChatBot-with-AdvanceRAG" class="block-20 zoom-effect" style="background-image: url('images/ragchatbot.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  <h3 class="heading"><a href="https://github.com/choudhurysoumyajit/Personal-ChatBot-with-AdvanceRAG">Advance Rag | Talk To Your Data</a></h3>
+				  <p>It's a AI based RAG application that let's you analyze and talk to your documents. The App is deployed here.<a href="https://jitragchatbot.streamlit.app/">check it out.</a></p>
 				</div>
 			  </div>
 			</div>
@@ -537,18 +562,14 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+	            <p><a href="images/Soumyajit Choudhury_Resume.pdf">resumelink</a></p>
 	          </div>
           </div>
 
 		  <div class="container">
 			<br>
 			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
+			
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
